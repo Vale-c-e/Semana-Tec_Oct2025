@@ -9,10 +9,36 @@ Exercises
 5. Make the ghosts smarter.
 """
 
+<<<<<<< HEAD
 from random import choice
 from turtle import *
 
 from freegames import floor, vector
+=======
+from turtle import Turtle
+from math import floor
+
+import turtle
+import bgcolor
+import clear
+import up
+import goto
+import dot
+import update
+import ontimer
+import setup
+import hideturtle
+import tracer
+import listen
+import onkey
+import done
+import vector
+import choice
+
+path = turtle.Turtle()
+path.hideturtle()
+turtle.tracer(False)
+>>>>>>> Games
 
 state = {'score': 0}
 path = Turtle(visible=False)
@@ -91,7 +117,11 @@ def valid(point):
 def world():
     """Draw world using path."""
     bgcolor('black')
+<<<<<<< HEAD
     path.color('blue')
+=======
+    path.color('pink')
+>>>>>>> Games
 
     for index in range(len(tiles)):
         tile = tiles[index]
@@ -128,7 +158,11 @@ def move():
 
     up()
     goto(pacman.x + 10, pacman.y + 10)
+<<<<<<< HEAD
     dot(20, 'yellow')
+=======
+    dot(20, 'purple')
+>>>>>>> Games
 
     for point, course in ghosts:
         if valid(point + course):
@@ -146,7 +180,11 @@ def move():
 
         up()
         goto(point.x + 10, point.y + 10)
+<<<<<<< HEAD
         dot(20, 'red')
+=======
+        dot(20, 'orange')
+>>>>>>> Games
 
     update()
 
