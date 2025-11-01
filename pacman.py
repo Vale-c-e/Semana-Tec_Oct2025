@@ -9,10 +9,29 @@ Exercises
 5. Make the ghosts smarter.
 """
 
-from random import choice
-from turtle import *
+from turtle import Turtle
+from math import floor
 
-from freegames import floor, vector
+import turtle
+import bgcolor
+import clear
+import up
+import goto
+import dot
+import update
+import ontimer
+import setup
+import hideturtle
+import tracer
+import listen
+import onkey
+import done
+import vector
+import choice
+
+path = turtle.Turtle()
+path.hideturtle()
+turtle.tracer(False)
 
 state = {'score': 0}
 path = Turtle(visible=False)
